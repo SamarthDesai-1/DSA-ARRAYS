@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class PositionsOfLargeGroups {
 
   public static void main(String[] args) {
-    String str = "ffff";
+    String str = "ffffzx";
     int i = 0;
     int j = 0;
     
