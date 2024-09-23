@@ -13,14 +13,13 @@ public class FindFirstAndLastPositionOfElementinSortedArrayTwo {
       
       if (nums[mid] == target) {
         int i = mid;
-        while (i >= 0 && nums[i] == target) {
-          i--;
-        }
+        while (i >= 0 && nums[i] == target) i--;
+        
         l.add(i + 1);
         i = mid;
-        while (i < n && nums[i] == target) {
-          i++;
-        }
+
+        while (i < n && nums[i] == target) i++;
+        
         l.add(i - 1);
         return;
       }
