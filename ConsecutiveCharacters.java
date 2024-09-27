@@ -27,3 +27,4 @@ public class ConsecutiveCharacters {
     System.out.println(solution(str));
   }
 }
+
