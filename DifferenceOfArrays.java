@@ -3,7 +3,6 @@ public class DifferenceOfArrays {
   static class Solution {
 
     public void solution(int[] a1, int[] a2) {
-      int n1 = a1.length;
       int n2 = a2.length;
 
       int[] diff = new int[n2];

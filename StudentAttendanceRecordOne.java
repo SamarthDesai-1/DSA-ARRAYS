@@ -15,7 +15,7 @@ public class StudentAttendanceRecordOne {
       }
     }
 
-    return (absent < 2 && late != 3) ? true : false;
+    return absent < 2 && late != 3 ? true : false;
   }
 
   public static void main(String[] args) {
