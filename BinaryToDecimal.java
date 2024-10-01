@@ -27,5 +27,4 @@ public class BinaryToDecimal {
       System.out.println("Binary number is : " + toDecimal(n));
     }
   }
-  
 }

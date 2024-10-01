@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ThousandSeperator {
 
   public static String looper(int n, boolean flag) {
@@ -25,9 +27,11 @@ public class ThousandSeperator {
   }
 
   public static void main(String[] args) {
-    int n = 1720;
-    System.out.println("Thousand seperator of " + n + " -> " + thousandSeperator(n));
+    try (Scanner sc = new Scanner(System.in)) {
 
+      System.out.print("Enter number : ");
+      int n = sc.nextInt();
+      System.out.println("Thousand seperator of " + n + " -> " + thousandSeperator(n));
+    }
   }
-
 }

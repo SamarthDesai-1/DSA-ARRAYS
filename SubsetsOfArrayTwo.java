@@ -1,11 +1,13 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 
-public class SubsetsOfArrayBitManipulation {
+public class SubsetsOfArrayTwo {
 
   public static ArrayList<ArrayList<Integer>> subsets(int[] nums) {
 
     int limit = (int) Math.pow(2, nums.length);
     ArrayList<ArrayList<Integer>> mainList = new ArrayList<>();
+    HashSet<ArrayList<Integer>> set = new HashSet<>();
 
     for (int i = 0; i < limit; i++) {
 
@@ -22,15 +24,18 @@ public class SubsetsOfArrayBitManipulation {
         } 
       }
 
-      mainList.add(list);
+      set.add(list);
     }
 
+    for (ArrayList<Integer> list : set) 
+      mainList.add(list);
+    
     return mainList;
   }
 
   public static void main(String[] args) {
-    int[] nums = { 1, 2, 34 };
+    int[] nums = { 1, 2, 2 };    
     System.out.println(subsets(nums));
   }
-
+  
 }

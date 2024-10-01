@@ -1,6 +1,7 @@
 public class StudentAttendanceRecordOne {
 
   public static boolean solution(String str) {
+    
     int absent = 0;
     int late = 0;
 

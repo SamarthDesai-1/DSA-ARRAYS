@@ -25,5 +25,4 @@ public class DecimalToBinary {
       System.out.println("Binary number is : " + toBinary(n));
     }
   }
-
 }

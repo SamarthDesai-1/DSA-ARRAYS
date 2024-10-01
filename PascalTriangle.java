@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class PascalTriangle {
 
@@ -40,8 +41,12 @@ public class PascalTriangle {
   }
 
   public static void main(String[] args) {
-    int n = 10;
-    System.out.println(solution(n));
+    try (Scanner input = new Scanner(System.in)) {
+
+      System.out.print("Enter N : ");
+      int n = input.nextInt();
+      System.out.println(solution(n));
+    }
   }
   
 }

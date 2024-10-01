@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class PascalTriangle2 {
   
@@ -36,12 +37,16 @@ public class PascalTriangle2 {
       ans.add(al);
     }
 
-    return ans;
+    return ans.get(n - 1);
   }
 
   public static void main(String[] args) {
-    int n = 5;
-    System.out.println(solution(n).get(n));
+     try (Scanner input = new Scanner(System.in)) {
+
+      System.out.print("Enter N : ");
+      int n = input.nextInt();
+      System.out.println(solution(n));
+    }
   }
   
 }
