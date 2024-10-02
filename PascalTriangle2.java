@@ -37,7 +37,7 @@ public class PascalTriangle2 {
       ans.add(al);
     }
 
-    return ans.get(n - 1);
+    return ans;
   }
 
   public static void main(String[] args) {
