@@ -12,7 +12,8 @@ public class ConsecutiveCharacters {
       if (str.charAt(x) == str.charAt(y)) {
         count++;
         y++;
-      } else {
+      } 
+      else {
         max = Math.max(max, count);
         count = 0;
         x = y;
