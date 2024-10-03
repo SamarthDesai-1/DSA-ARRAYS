@@ -9,7 +9,7 @@ public class MinimumInRotatedArrayBinarySearch {
     while (start <= end) {
 
       int mid = start + (end - start) / 2;
-      if (nums[mid] >= nums[0]) 
+      if (nums[mid] >= nums[0])
         start = mid + 1;
       else {
         potentialAnswer = nums[mid];
@@ -20,7 +20,7 @@ public class MinimumInRotatedArrayBinarySearch {
   }
 
   public static void main(String[] args) {
-    int[] nums = { 4, 6, 8, 10, 1, 2 };
+    int[] nums = { 4,5,6,7,0,1,2 };
 
     System.out.println("Minimum element from sorted array is : " + minimum(nums));
   }
