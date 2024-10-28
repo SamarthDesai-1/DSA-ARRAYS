@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class SubsetsOfArray {
 
   public static void solution(int[] nums) {

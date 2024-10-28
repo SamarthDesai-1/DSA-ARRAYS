@@ -33,7 +33,5 @@ public class SqrtBinarySearch {
 
       System.out.println("Square root of " + n + " is : " + squareRoot(n));
     }
-
   }
-  
 }

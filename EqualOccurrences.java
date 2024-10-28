@@ -4,6 +4,7 @@ import java.util.HashMap;
 public class EqualOccurrences {
 
   public static boolean equalOccurrences(HashMap<Character, Integer> hm) {
+    
     Collection<Integer> values = hm.values();
     Integer[] array = values.toArray(new Integer[0]);
     int[] resultArray = new int[array.length];
