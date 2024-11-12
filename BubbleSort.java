@@ -1,33 +1,37 @@
-class Sort {
+public class BubbleSort {
 
-  public void sort(int[] nums) {
-    int n = nums.length;
-    boolean isSwapped;
+  public static void bubbleSort(int[] nums) {
+
+    int n = nums.length; 
+    boolean swapped = false;
+
     for (int i = 0; i < n - 1; i++) {
 
-      isSwapped = false;
-      
       for (int j = 0; j < n - 1 - i; j++) {
         if (nums[j] > nums[j + 1]) {
-          int temp = nums[j + 1];
-          nums[j + 1] = nums[j];
-          nums[j] = temp;
-          isSwapped = true;
+          int cache = nums[j];
+          nums[j] = nums[j + 1];
+          nums[j + 1] = cache;
+
+          swapped = true;
         }
       }
 
-      if (!isSwapped) break;
+      if (!swapped) break;
     }
-  }
-}
 
-public class BubbleSort {
+  }
 
   public static void main(String[] args) {
-    int[] array = { 8, 6, 2, 4, 5, 1, 3, 2 };
-    Sort foo = new Sort();
-    foo.sort(array);
+    int[] nums = { 1000, 9, 5, 2, 4, 6, 256, 95, 6, 8, -96, -5, -8, -3, -526 };
 
-    for (int x : array) System.out.print(x + " "); 
+    System.out.print("Unsorted Array = ");
+    for (int x : nums) System.out.print(x + " ");
+
+    bubbleSort(nums);
+    System.out.println();
+
+    System.out.print("Sorted Array using bubble sort = ");
+    for (int x : nums) System.out.print(x + " "); 
   }
 }

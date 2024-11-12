@@ -29,8 +29,8 @@ public class FindFirstAndLastIndexBinarySearchCleanCode {
 
 
   public static void main(String[] args) {
-    
     int[] nums = { 10, 20, 20, 20, 30, 40, 50, 50, 50, 50, 60, 70, 80, 90, 90, 100 };
+    
     int target = 20;
     end = nums.length - 1;
 
@@ -44,5 +44,4 @@ public class FindFirstAndLastIndexBinarySearchCleanCode {
     System.out.print("Indexes : ");
     for (int x : new int[] { first, second }) System.out.print(x + " ");
   }
-  
 }

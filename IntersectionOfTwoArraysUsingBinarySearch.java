@@ -33,11 +33,12 @@ public class IntersectionOfTwoArraysUsingBinarySearch {
 
   public static void main(String[] args) {
 
-    int[] numsOne = { 4,9,5 };
-    int[] numsTwo = { 9,4,9,8,4 };
+    int[] numsOne = { 4, 9, 5 };
+    int[] numsTwo = { 9, 4, 9, 8, 4 };
 
     intersectPoints(numsOne, numsTwo);
 
     System.out.println("Intersection of two arrays is : " + set);
   }
 }
+

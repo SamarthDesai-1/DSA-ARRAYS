@@ -1,22 +1,20 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class FloorAndCiel {
 
   static class Solution {
 
-    public List<Integer> solution(int[] nums, int target) {
-      List<Integer> list = new ArrayList<>();
+    public Vector<Integer> solution(int[] nums, int target) {
+      Vector<Integer> vector = new Vector<>();
 
       Arrays.sort(nums);
-      int low = 0;
-      int high = nums.length - 1;
+      int start  = 0;
+      int end = nums.length - 1;
       int floor = 0;
       int ciel = 0;
 
-      while (low <= high) {
-        int mid = (high + low) / 2;
+      while (start  <= end) {
+        int mid = (end + start ) / 2;
 
         if (nums[mid] == target) {
           floor = nums[mid];
@@ -24,17 +22,17 @@ public class FloorAndCiel {
           break;
         }
         else if (target > nums[mid]) {
-          low = mid + 1;
+          start  = mid + 1;
           floor = nums[mid];
         }
         else {
-          high = mid - 1;
+          end = mid - 1;
           ciel = nums[mid];
         }
       }
-      list.add(floor);
-      list.add(ciel);
-      return list;
+      vector.add(floor);
+      vector.add(ciel);
+      return vector;
     }
   }
 
@@ -45,5 +43,4 @@ public class FloorAndCiel {
     Solution foo = new Solution();
     System.out.println(foo.solution(nums, target));
   }
-
 }
