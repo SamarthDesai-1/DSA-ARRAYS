@@ -10,10 +10,7 @@ public class MaxConsecutiveIII {
       if (nums[end] == 0)
         k--;
 
-      while (k == 0 && start <= end) {
-
-        size = Math.max(size, end - start + 1);
-        
+      while (k < 0) {
         if (nums[start] == 0)
           k++;
 
@@ -21,7 +18,6 @@ public class MaxConsecutiveIII {
       }
       
       size = Math.max(size, end - start + 1);
-
       end++;
     }
 
@@ -32,6 +28,6 @@ public class MaxConsecutiveIII {
     int[] nums = { 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1 };
     int k = 3;
 
-    System.out.println(maxSequenceLength(nums, k));
+    System.out.println("Max length after fliping " + k + " 0's is : " + maxSequenceLength(nums, k));
   }
 }

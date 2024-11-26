@@ -3,7 +3,6 @@ import java.util.*;
 public class MinimumWindowSubstring {
 
   public static int minimumSubstring(String s, String t) {
-
     int size = Integer.MAX_VALUE;
 
     for (int i = 0; i < s.length(); i++) {

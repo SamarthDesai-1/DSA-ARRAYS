@@ -8,6 +8,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
    * Space Complexity : O(1)
    * 
   */
+  
   public static int maxLength(String s) {
     int length = 0;
 

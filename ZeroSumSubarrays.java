@@ -15,6 +15,7 @@ public class ZeroSumSubarrays {
       if (map.containsKey(prefixSum)) {
         total += map.get(prefixSum);
       }
+      
       map.put(prefixSum, map.getOrDefault(prefixSum, 0) + 1);
     }
 

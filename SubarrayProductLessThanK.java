@@ -16,7 +16,6 @@ public class SubarrayProductLessThanK {
       }
 
       total = total + (end - start) + 1;
-
       end++;
     }
 
