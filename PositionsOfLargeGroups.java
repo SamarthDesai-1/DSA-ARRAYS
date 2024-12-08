@@ -1,9 +1,8 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class PositionsOfLargeGroups {
 
-  public static void main(String[] args) {
-    String str = "ffffzx";
+  public static ArrayList<ArrayList<Integer>> largeGroups(String str) {
     int i = 0;
     int j = 0;
     
@@ -24,6 +23,14 @@ public class PositionsOfLargeGroups {
       i = j;
       j++;
     }
-    System.out.println(mainList);
+
+    return mainList;
+  }
+
+
+  public static void main(String[] args) {
+    String str = "ffffzxAAAAA";
+    
+    System.out.println(largeGroups(str));
   }
 }

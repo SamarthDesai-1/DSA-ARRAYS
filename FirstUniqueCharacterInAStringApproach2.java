@@ -3,7 +3,6 @@ import java.util.*;
 public class FirstUniqueCharacterInAStringApproach2 {
 
   public static int firstUniqueChar(String s) {
-    
     int Ans = -1;
     
     int[] f = new int[26];

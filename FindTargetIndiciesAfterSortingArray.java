@@ -10,8 +10,11 @@ public class FindTargetIndiciesAfterSortingArray {
 
   public static void fillVector(int[] nums) {
 
-    if (first == -1 || second == -1) return;
-    for (int i = first; i <= second; i++) vector.add(i);
+    if (first == -1 || second == -1) 
+      return;
+      
+    for (int i = first; i <= second; i++) 
+      vector.add(i);
   }
 
   public static void findIndexAfterSorting(int[] nums, int target, char flag) {

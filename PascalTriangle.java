@@ -1,20 +1,18 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class PascalTriangle {
 
-  public static List<List<Integer>> solution(int n) {
-    List<List<Integer>> ans = new ArrayList<>();
+  public static ArrayList<ArrayList<Integer>> solution(int n) {
+    ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
 
-    List<Integer> t1 = new ArrayList<>();
+    ArrayList<Integer> t1 = new ArrayList<>();
     t1.add(1);
     ans.add(t1);
 
     if (n == 1)
       return ans;
 
-    List<Integer> t2 = new ArrayList<>();
+    ArrayList<Integer> t2 = new ArrayList<>();
     t2.add(1);
     t2.add(1);
     ans.add(t2);
@@ -26,8 +24,8 @@ public class PascalTriangle {
       if (ans.size() == n)
         break;
 
-      List<Integer> temp = ans.get(i);
-      List<Integer> al = new ArrayList<>();
+      ArrayList<Integer> temp = ans.get(i);
+      ArrayList<Integer> al = new ArrayList<>();
 
       al.add(1);
       for (int j = 1; j < temp.size(); j++) {
@@ -48,5 +46,4 @@ public class PascalTriangle {
       System.out.println(solution(n));
     }
   }
-  
 }

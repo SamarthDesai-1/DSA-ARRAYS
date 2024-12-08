@@ -10,13 +10,13 @@ public class LengthOfLastWordTwo {
   public static int approachTwo(String str) {
     str = str.trim();
     int count = 0;
-    if (!str.contains(" ")) return str.length();
-    else {
-
-      for (int i = str.length() - 1; str.charAt(i) != ' '; i--) {
+    
+    if (!str.contains(" ")) 
+      return str.length();
+    else 
+      for (int i = str.length() - 1; str.charAt(i) != ' '; i--)
         count++;
-      }
-    }
+    
 
     return count;
   }

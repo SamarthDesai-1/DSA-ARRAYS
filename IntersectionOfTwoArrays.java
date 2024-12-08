@@ -7,9 +7,9 @@ public class IntersectionOfTwoArrays {
     HashMap<Integer, Integer> map = new HashMap<>();
     Vector<Integer> vector = new Vector<>();
 
-    for (int i = 0; i < numsOne.length; i++) {
+    for (int i = 0; i < numsOne.length; i++) 
       map.put(numsOne[i], map.getOrDefault(numsOne[i], 0) + 1);
-    }
+    
 
     for (int key : numsTwo) {
       if (map.containsKey(key)) {

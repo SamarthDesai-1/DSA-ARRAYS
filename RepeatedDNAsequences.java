@@ -8,6 +8,7 @@ public class RepeatedDNAsequences {
 
     @SuppressWarnings("unused")
     int start = 0;
+
     int end = 0;
     int n = s.length();
     StringBuffer current = new StringBuffer();
@@ -40,6 +41,6 @@ public class RepeatedDNAsequences {
   public static void main(String[] args) {
     String s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT";
     
-    System.out.println(maxLength(s));
+    System.out.println("Maximum repeated DNA sequence is : " + maxLength(s));
   } 
 }

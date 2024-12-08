@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class LargestNumberAtleastTwiceOfOthers {
 
   public static int largestNumberAtleastTwice(int[] nums) {
