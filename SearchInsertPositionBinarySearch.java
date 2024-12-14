@@ -27,9 +27,8 @@ public class SearchInsertPositionBinarySearch {
 
   public static void main(String[] args) {
     int[] nums = { 2, 6, 9, 10, 15, 19, 26 };
-    int target = 141206;
+    int target = 11;
 
     System.out.println("Correct insert positon : " + search(nums, target));
   }
-
 }
