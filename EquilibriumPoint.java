@@ -29,7 +29,7 @@ public class EquilibriumPoint {
   }
 
   public static void main(String[] args) {
-    int[] nums = { 1, -1, 4 };
+    int[] nums = { 5, 4, 3, 2, 1 };
 
     System.out.println("Middle index is : " + equlibriumPoint(nums));
   }
